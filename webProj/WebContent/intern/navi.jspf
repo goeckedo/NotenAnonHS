@@ -1,0 +1,8 @@
+<nav>
+	<ul id="navigation">
+		<li><a href="<%=request.getContextPath()%>/intern/startseite.jsp">Start</a></li>
+		<li><a href="<%=request.getContextPath()%>/uebersicht">Übersicht</a></li>
+		<li><a href="<%=request.getContextPath()%>/intern/import.jsp">Import</a></li>
+		<li><a href="<%=request.getContextPath()%>/intern/benutzer.jsp">Benutzerverwaltung</a></li>
+	</ul>
+</nav>

@@ -1,0 +1,145 @@
+ul#anlegen{	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: none;
+}
+li#anlegen{
+	float: left;
+	display: block;
+	color: black;
+	text-align: left;
+	padding: 16px;
+	text-decoration: none;
+}
+
+body {
+	font: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin: 0;
+    padding-top: 5px;
+    background-color: #fff;
+}
+
+#maincontainer {
+    border: 2px solid #ffffff;
+    -moz-box-shadow: 0px 0px 30px grey;
+    -webkit-box-shadow: 0px 0px 30px grey;
+    box-shadow: 0px 0px 15px gray;
+    padding: 0;
+}
+
+#logo {
+    height: 90px;
+    background-color: #ffffff;
+    vertical-align: middle;
+}
+
+#header {
+    height: 90px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+div#content {
+	background-color: #fff;
+	text-align: left;
+	padding-left: 10px;
+}
+
+/***** MIN-BREITE 300px *****/
+@media(min-width: 300px){
+
+	#logo img{
+		height: 100px;
+		padding-bottom: 15px;
+	}
+
+	div#content {
+		height: auto;
+		background-color: #fff;
+		text-align: left;
+		padding-left: 10px;
+		padding-right: 16px;
+		font-size: 30px;
+		margin-left: 5px;
+	}
+	
+/***** MIN-BREITE 992px *****/
+@media(min-width: 992px){
+
+	#maincontainer {
+		margin-top: 15px;
+	}
+
+	div#content {
+		height: auto;
+		background-color: #fff;
+		text-align: left;
+		padding: 10px;
+		font-size: 25px;
+		margin-left: 0;
+	}
+
+	div#content div img{
+		width: 50%;
+		height: auto;
+	}
+
+	ul {
+		margin-left: 0;
+		padding-left: 0;
+		display: inline;
+	}
+
+	ul li {
+		list-style: none;
+		background-color: #fff;
+		text-align: left;
+		line-height: 16px;
+		margin-bottom: 5px;
+	}
+
+	ul > li > a{
+		list-style: none;
+		background-color: #fff;
+		font-weight: 700;
+	}
+
+	ul a {
+		text-decoration: none;
+		position: relative;
+		display: block;
+	    padding: 3px 5px 3px 15px;
+	    color: grey;
+	}
+
+	ul > li:active > a{
+		background-color: grey;
+		color: #ffffff;
+	}
+
+	.user p{
+		font-size: 25px;
+	}
+
+	.clear {
+		clear: none;
+	}
+}
+
+/***** MIN-BREITE 1200px *****/
+@media(min-width: 1200px){
+
+	div#content {
+		height: 80%;
+		background-color: #fff;
+		text-align: left;
+		padding-left: 10px;
+		font-size: 20px;
+		margin-left: 0;
+	}
+
+
+}

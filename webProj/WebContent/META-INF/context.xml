@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Realm className="org.apache.catalina.realm.JDBCRealm" 
+	driverName="oracle.jdbc.OracleDriver" 
+	connectionURL="jdbc:oracle:thin:@orahost:1521:infdb" 
+	connectionName="goeckedo" 
+	connectionPassword="goeckedo" 
+	userTable="login" 
+	userNameCol="lusername" 
+	userCredCol="lpassword" 
+	userRoleTable="login" 
+	roleNameCol="facultyID" />
+</Context>
