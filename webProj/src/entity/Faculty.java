@@ -2,7 +2,7 @@ package entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "faculty")
+@Table(name = "facultytable")
 public class Faculty {
 	
 	@Id
@@ -10,8 +10,8 @@ public class Faculty {
 	@SequenceGenerator(name="FacultyPK", sequenceName="faculty_seq", allocationSize=1)
 	private int facultyID;
 	
-	private String name;
-	private String token;
+	private String facultyName;
+	private String facultyToken;
 	
 	public void setFacultyID(int facultyID) {
 		this.facultyID = facultyID;
@@ -22,13 +22,13 @@ public class Faculty {
 	}
 	
 	public Faculty(String name, String token) {
-		this.name = name;
-		this.token = token;
+		this.facultyName = name;
+		this.facultyToken = token;
 	}
 
 	@Override
 	public String toString() {
-		return "Faculty [facultyID=" + facultyID + ", name=" + name + ", token=" + token + "]";
+		return "Faculty [facultyID=" + facultyID + ", name=" + facultyName + ", token=" + facultyToken + "]";
 	}
 
 	public int getFacultyID() {
@@ -36,11 +36,11 @@ public class Faculty {
 	}
 
 	public String getName() {
-		return name;
+		return facultyName;
 	}
 
 	public String getToken() {
-		return token;
+		return facultyToken;
 	}
 	
 	
