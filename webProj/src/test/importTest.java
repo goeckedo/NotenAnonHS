@@ -25,7 +25,6 @@ public class importTest {
 
 		Faculty fac = new Faculty("Test","Test");
 
-		fac.setFacultyID(1000);
 		Login log = new Login("admin","admin", fac);
 			try {
 				User_ user = (User_)managerU.findByPrimaryKey(1000);
@@ -42,13 +41,12 @@ public class importTest {
 						managerE.save(exam);
 					}
 					Student stud = managerS.getUserByMatrikel("1234").iterator().next();
-					if(stud.getMtknr().equals("1234")){
+
 						System.err.println("ERROR - Student bereits vorhanden");
-					}else{
+
 						System.out.println("Student erstellen");
-						stud = new Student("1","1234","84",fac);
 						managerS.save(stud);
-					}
+
 					if(!managerED.getDetails(stud, exam).isEmpty()){
 						System.err.println("Student ist bereits in Prüfung");
 					}else{

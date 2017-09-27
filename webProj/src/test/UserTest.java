@@ -15,7 +15,7 @@ public class UserTest {
 		UserManager manager = new UserManager("webProj");
 		User_ user;
 		Faculty fac = new Faculty("Test","Test");
-		fac.setFacultyID(1000);
+
 		Login log = new Login("admin","admin", fac);
 		User_ user1 = new User_("TestUser","123421",fac ,log );
 		Collection<User_> userCol;
